@@ -248,20 +248,27 @@ select.addEventListener("change", function () {
     }, 300);
 });
 
-const openBtn = document.querySelector(".btn");
+
+
+
+const openBtns = document.querySelectorAll(".btn, .menu-btn");
 const popup = document.getElementById("popup");
 const purchaseBtn = document.querySelector(".purchase-btn");
 
-openBtn.addEventListener("click", () => {
-    popup.classList.add("active");
+
+openBtns.forEach(btn => {
+    btn.addEventListener("click", (e) => {
+        e.preventDefault();
+        popup.classList.add("active");
+    });
 });
+
 
 popup.addEventListener("click", (e) => {
     if (e.target === popup) {
         popup.classList.remove("active");
     }
 });
-
 purchaseBtn.addEventListener("click", () => {
     const selected = select.value;
 
@@ -271,4 +278,44 @@ purchaseBtn.addEventListener("click", () => {
     const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
 
     window.open(url, "_blank");
+});
+
+
+
+
+
+
+
+
+
+
+
+
+// HAMBURGER MENU
+const hamburger = document.getElementById("hamburger");
+const mobileMenu = document.getElementById("mobileMenu");
+const closeMenu = document.getElementById("closeMenu");
+
+// OPEN
+hamburger.addEventListener("click", () => {
+    mobileMenu.classList.add("active");
+});
+
+// CLOSE BUTTON
+closeMenu.addEventListener("click", () => {
+    mobileMenu.classList.remove("active");
+});
+
+// CLOSE ON OUTSIDE CLICK
+window.addEventListener("click", (e) => {
+    if (e.target === mobileMenu) {
+        mobileMenu.classList.remove("active");
+    }
+});
+
+// CLOSE ON LINK CLICK
+document.querySelectorAll(".mobile-menu a").forEach(link => {
+    link.addEventListener("click", () => {
+        mobileMenu.classList.remove("active");
+    });
 });

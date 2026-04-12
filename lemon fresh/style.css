@@ -995,6 +995,7 @@ textarea:focus {
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 .Price-container {
@@ -1005,7 +1006,7 @@ textarea:focus {
     border-radius: 15px;
     max-width: 900px;
     width: 90%;
-    transform: scale(0.9);
+    transform: scale(0.8);
     transition: 0.3s;
 }
 
@@ -1094,4 +1095,99 @@ textarea:focus {
 .popup.active {
     opacity: 1;
     visibility: visible;
+}
+
+
+
+
+
+
+
+
+
+/* =========================
+   HAMBURGER ICON
+   ========================= */
+
+.hamburger {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* show only mobile */
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+}
+
+
+/* =========================
+   MOBILE MENU (SLIDE PANEL)
+   ========================= */
+
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 75%;
+    height: 100vh;
+    background: white;
+    box-shadow: -10px 0 30px rgba(0,0,0,0.2);
+    z-index: 9999;
+    padding: 25px;
+    transition: 0.4s ease;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* active state */
+.mobile-menu.active {
+    right: 0;
+}
+
+
+/* header inside menu */
+.menu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-logo {
+    width: 140px;
+}
+
+.close-menu {
+    font-size: 22px;
+    cursor: pointer;
+}
+
+
+/* menu links */
+.mobile-menu ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.mobile-menu ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+/* button */
+.menu-btn {
+    background: black;
+    color: white;
+    padding: 12px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 8px;
 }

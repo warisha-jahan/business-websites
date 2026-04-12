@@ -1,0 +1,348 @@
+/* =========================
+   BASE MOBILE RESPONSIVE FILE
+   Lemon Fresh Website Fixes
+   ========================= */
+
+
+/* =========================
+   TABLET VIEW (1024px)
+   ========================= */
+@media (max-width: 1024px) {
+
+
+
+    .hero-content h1 {
+        font-size: 55px;
+    }
+
+    .hero-content p {
+        width: 90%;
+        font-size: 16px;
+    }
+
+    .features {
+        height: auto;
+        padding: 80px 40px;
+    }
+
+    .features-bottom {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .features-left,
+    .features-right {
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .feature-box {
+        width: 45%;
+    }
+
+    .features-center {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .feature-bottle {
+        width: 280px;
+    }
+
+    /* GALLERY */
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* CONTACT */
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .contact-map,
+    .contact-form {
+        width: 100%;
+    }
+
+    /* FOOTER */
+    .footer-container {
+        flex-wrap: wrap;
+    }
+
+    .footer-col {
+        flex: 1 1 45%;
+    }
+}
+
+@media (max-width: 768px) {
+
+
+
+    /* HEADER FIX */
+    .nav-links {
+        display: none;
+        /* desktop menu hide */
+    }
+
+    .btn {
+        display: none;
+        /* Buy Now hide */
+    }
+
+    .logo {
+        max-width: 40%;
+    }
+
+    /* HERO */
+    .hero {
+        height: auto;
+        padding: 120px 20px 60px;
+    }
+
+    .hero-content h1 {
+        font-size: 32px;
+        line-height: 1.2;
+    }
+
+    .hero-content p {
+        font-size: 14px;
+        width: 100%;
+    }
+
+    /* FEATURES */
+    .features {
+        padding: 60px 20px;
+        height: auto;
+    }
+
+    .features-left,
+    .features-right {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .feature-box {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .feature-box h2 {
+        font-size: 18px;
+    }
+
+    .feature-box p {
+        font-size: 14px;
+    }
+
+    .feature-bottle {
+        width: 200px;
+    }
+
+    /* TICKER */
+    .ticker-content span {
+        font-size: 16px;
+    }
+
+    /* GALLERY FIX (IMPORTANT YOUR ISSUE) */
+
+    .gallery {
+        padding: 40px 20px;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 200px;
+        gap: 12px;
+    }
+
+    /* IMPORTANT: span override ONLY for mobile */
+    .small,
+    .big {
+        grid-column: auto !important;
+        grid-row: auto !important;
+    }
+
+    /* force equal height cards */
+    .item {
+        width: 100%;
+        height: 100%;
+        border-radius: 15px;
+        overflow: hidden;
+    }
+
+    .item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /* REVIEWS FIX */
+    .reviews {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 60px 25px;
+    }
+
+    .slider {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .slides {
+        display: flex;
+        width: 100%;
+    }
+
+    .review {
+        min-width: 100%;
+        text-align: center;
+        padding: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* CONTACT FIX */
+    .contact {
+        padding: 180px 20px;
+        height: auto;
+    }
+
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .form-row {
+        flex-direction: column;
+    }
+
+    .contact-form h2 {
+        font-size: 24px;
+    }
+
+    /* FOOTER FIX */
+    .footer-container {
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .footer-col {
+        min-width: 100%;
+    }
+
+    .social-icons {
+        justify-content: flex-start;
+    }
+
+    .footer-bottom {
+        text-align: left;
+
+    }
+
+
+
+    .popup {
+        padding: 50px 0;
+        height: 120vh;
+        /* IMPORTANT */
+        overflow-y: auto;
+    }
+
+    .Price-container {
+        flex-direction:column;
+        padding: 30px 20px;
+        height:900px;
+        z-index: 999;
+        /* transform: scale(0.7); */
+        overflow-y: auto;
+        margin: auto;
+        max-width: 90%;
+        width: 420px;
+
+
+
+
+
+    }
+
+   
+
+    .bottle-container img{
+        width: 90%;
+    }
+
+    .bottle-container,
+    .price-content {
+        width: 100%;
+    }
+
+    .price-content {
+        padding: 20px;
+    }
+    .price-content h2{
+        font-family: 15px;
+    }
+    .price-content h3{
+        font-family: 13px;
+    }
+
+    .price-content .Price {
+        font-size: 20px;
+    }
+
+    .price-content ul li{
+        font-size: 14px;
+    }
+    .price-content select{
+        font-size: 15px;
+        
+    }
+    .price-content select option{
+        font-size: 10px !important;
+    }
+
+
+    .animated-heading{
+        font-size: 37px;
+    }
+
+    #gallery h2{
+        font-size: 37px;
+    }
+}
+
+
+/* =========================
+   SMALL MOBILE (480px)
+   ========================= */
+@media (max-width: 480px) {
+
+    .hero-content h1 {
+        font-size: 26px;
+    }
+
+    .hero-content p {
+        font-size: 13px;
+    }
+
+    .feature-box h2 {
+        font-size: 16px;
+    }
+
+    .ticker-content span {
+        font-size: 14px;
+    }
+
+    .reviews h2 {
+        font-size: 22px;
+    }
+}
