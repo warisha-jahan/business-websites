@@ -1,12 +1,4 @@
-/* =========================
-   BASE MOBILE RESPONSIVE FILE
-   Lemon Fresh Website Fixes
-   ========================= */
-
-
-/* =========================
-   TABLET VIEW (1024px)
-   ========================= */
+/* Tablet View */
 @media (max-width: 1024px) {
 
 
@@ -81,22 +73,22 @@
 
 
 
-    /* HEADER FIX */
+/* Header */
     .nav-links {
         display: none;
-        /* desktop menu hide */
+       
     }
 
     .btn {
         display: none;
-        /* Buy Now hide */
+      
     }
 
     .logo {
         max-width: 40%;
     }
 
-    /* HERO */
+    
     .hero {
         height: auto;
         padding: 120px 20px 60px;
@@ -146,8 +138,8 @@
         font-size: 16px;
     }
 
-    /* GALLERY FIX (IMPORTANT YOUR ISSUE) */
-
+   
+          /* GALLERY */
     .gallery {
         padding: 40px 20px;
     }
@@ -159,14 +151,14 @@
         gap: 12px;
     }
 
-    /* IMPORTANT: span override ONLY for mobile */
+  
     .small,
     .big {
         grid-column: auto !important;
         grid-row: auto !important;
     }
 
-    /* force equal height cards */
+   
     .item {
         width: 100%;
         height: 100%;
@@ -180,7 +172,7 @@
         object-fit: cover;
     }
 
-    /* REVIEWS FIX */
+  /* REVIEWS SECTION */
     .reviews {
         display: flex;
         flex-direction: column;
@@ -211,7 +203,7 @@
         justify-content: center;
     }
 
-    /* CONTACT FIX */
+    /* CONTACT SECTION */
     .contact {
         padding: 180px 20px;
         height: auto;
@@ -229,7 +221,7 @@
         font-size: 24px;
     }
 
-    /* FOOTER FIX */
+   
     .footer-container {
         flex-direction: column;
         text-align: left;
@@ -248,12 +240,11 @@
 
     }
 
-
+/* Popup Container */
 
     .popup {
         padding: 50px 0;
         height: 120vh;
-        /* IMPORTANT */
         overflow-y: auto;
     }
 
@@ -320,10 +311,7 @@
     }
 }
 
-
-/* =========================
-   SMALL MOBILE (480px)
-   ========================= */
+/* Small Mobile  */
 @media (max-width: 480px) {
 
     .hero-content h1 {

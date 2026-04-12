@@ -1100,15 +1100,6 @@ textarea:focus {
 
 
 
-
-
-
-
-
-/* =========================
-   HAMBURGER ICON
-   ========================= */
-
 .hamburger {
     display: none;
     font-size: 24px;
@@ -1123,9 +1114,7 @@ textarea:focus {
 }
 
 
-/* =========================
-   MOBILE MENU (SLIDE PANEL)
-   ========================= */
+/* Mobile Slide Panel  */
 
 .mobile-menu {
     position: fixed;
